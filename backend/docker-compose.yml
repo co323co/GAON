@@ -12,8 +12,8 @@ services:
       - 32000:3306
     # 컨테이너 내에서 사용되는 환경 변수
     environment:
-      # <설정한 Database root 계정 비밀 번호 : 일해라!0!>
-      MYSQL_ROOT_PASSWORD: dlfgofk!0!
+      # <Database root 계정 비밀 번호 설정 : 일해라!0!>
+      MYSQL_ROOT_PASSWORD: DLFgofk!0!
       TZ: 'Asia/Seoul'
     # privileged: true
     # 실제 드라이브와 컨테이너의 드라이브를 연결(Mount)
@@ -39,17 +39,10 @@ services:
       - 8443:8443
     environment:
       TZ: Asia/Seoul
-      # 수정사항
       #Spring application.properties DB 설정
       #  SPRING_DATASOURCE_URL: 'jdbc:mysql://localhost:3306/gaon?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true'
       SPRING_DATASOURCE_URL: 'jdbc:mysql://db:3306/gaon?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true'
-      # Kurento Media Client 동작을 위한 Kurento Media Server URL 설정
-      # JAVA_TOOL_OPTIONS: '-Dkms.url=ws://kurento:8888/kurento'
       server.address: 0.0.0.0
-      # SERVER_PORT: 5442
-      # OPENVIDU_URL: http://localhost:5443
-      # OPENVIDU_SECRET: ${OPENVIDU_SECRET}
-      # CALL_OPENVIDU_CERTTYPE: ${CERTIFICATE_TYPE}
       # 의존 컨테이너
     depends_on:
       - db
