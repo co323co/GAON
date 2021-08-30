@@ -154,11 +154,6 @@ gantt
     발표준비 :08-17, 3d
 ```
 
-## ERD 
-<div align="center"> 
-![ERD](/uploads/2e323de6da887834ccf7cf2a6471edfe/ERD.png)
-</div>
-
 ## 목차
 
 - [프로젝트 소개](#프로젝트-소개)   
