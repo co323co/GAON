@@ -100,11 +100,3 @@
   - [Element Plus](https://element-plus.org/)
 <br>
 
-
-__자체 제작 산출물__ (필요시 이미지 또는 설명 첨부)
-- LOGO
-- CardView
-- Button
-- Calendar
-<br>
-
